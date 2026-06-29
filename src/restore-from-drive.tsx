@@ -191,7 +191,14 @@ async function handleDeviceMismatch(
     title: "Restoring…",
   });
   try {
-    if (await isRaycastRunning()) await quitRaycast();
+    if (await isRaycastRunning()) {
+      const quit = await quitRaycast();
+      if (!quit) {
+        throw new Error(
+          "Raycast is still running. Quit it manually and try again.",
+        );
+      }
+    }
     const result = await runRestore(
       backup,
       { allowDeviceMismatch: true },
