@@ -1,5 +1,4 @@
 import { OAuth, getPreferenceValues } from "@raycast/api";
-import { Preferences } from "./types";
 
 /**
  * Google OAuth via Raycast's PKCE client.

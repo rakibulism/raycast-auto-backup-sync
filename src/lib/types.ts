@@ -41,12 +41,3 @@ export interface DriveBackup {
   /** Reported size of the zip in Drive, in bytes. */
   zipBytes: number;
 }
-
-export interface Preferences {
-  googleClientID: string;
-  googleClientSecret?: string;
-  deviceName?: string;
-  keepBackupCount?: string;
-  backupActivities: boolean;
-  warnIfRunning: boolean;
-}

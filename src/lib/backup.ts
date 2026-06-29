@@ -14,7 +14,7 @@ import {
   getMacosVersion,
   isRaycastRunning,
 } from "./system";
-import { BackupMetadata, Preferences } from "./types";
+import { BackupMetadata } from "./types";
 import {
   resolveDeviceName,
   parseKeepCount,
