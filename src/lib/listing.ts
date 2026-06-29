@@ -6,7 +6,7 @@ import {
   ZIP_SUFFIX,
   META_SUFFIX,
 } from "./naming";
-import { BackupMetadata, DriveBackup, Preferences } from "./types";
+import { BackupMetadata, DriveBackup } from "./types";
 
 /**
  * List the backups stored for this device, newest first. Pairs each .zip with its

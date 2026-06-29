@@ -9,7 +9,6 @@ import {
 import { runBackup } from "./lib/backup";
 import { isRaycastRunning, quitRaycast } from "./lib/system";
 import { formatBytes } from "./lib/format";
-import { Preferences } from "./lib/types";
 
 export default async function Command() {
   const prefs = getPreferenceValues<Preferences>();

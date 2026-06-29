@@ -1,6 +1,6 @@
 # Raycast Backup & Sync Changelog
 
-## [Initial Version] - 2026-06-30
+## [Initial Release] - {PR_MERGE_DATE}
 
 - Back up Raycast's local data to Google Drive as a versioned, compressed archive.
 - Restore a chosen backup onto the same machine, with an automatic pre-restore safety copy and SHA-256 integrity check.
