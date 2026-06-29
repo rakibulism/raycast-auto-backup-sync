@@ -1,5 +1,5 @@
 import { getPreferenceValues } from "@raycast/api";
-import { v4 as uuidv4 } from "uuid";
+import { randomUUID } from "crypto";
 import { existingBackupFiles, raycastDataDirExists } from "./paths";
 import { buildArchive, sha256 } from "./archive";
 import {
@@ -67,7 +67,7 @@ export async function runBackup(
   const timestamp = new Date().toISOString();
 
   const metadata: BackupMetadata = {
-    backupId: uuidv4(),
+    backupId: randomUUID(),
     schemaVersion: "2.0",
     deviceName,
     deviceId,
